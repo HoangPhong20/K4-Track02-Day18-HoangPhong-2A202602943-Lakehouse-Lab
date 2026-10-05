@@ -1,0 +1,46 @@
+{
+  "notebooks": [
+    {
+      "notebook": "01_delta_basics.ipynb",
+      "code_cells": 9,
+      "sha256": "479d8fc8cf111aa8c19bb3e231b274b9a3e1c0f22430db63027053a40882991d"
+    },
+    {
+      "notebook": "02_optimize_zorder.ipynb",
+      "code_cells": 8,
+      "sha256": "0e6c6ac0e3aef4b15d30db93b4fd0138e1b81ce2d2b1b6a00f67fd902b3e0c9e"
+    },
+    {
+      "notebook": "03_time_travel.ipynb",
+      "code_cells": 8,
+      "sha256": "4e85109b376fa26bfec6cdcd88387f219d7876929b75514a367744f1ffea71e7"
+    },
+    {
+      "notebook": "04_medallion.ipynb",
+      "code_cells": 6,
+      "sha256": "f35e62c097de7af7a7933c7267c13fecc3c428d3bb6c6135e5ce97f015e06541"
+    },
+    {
+      "notebook": "05_iceberg_catalog.ipynb",
+      "code_cells": 14,
+      "sha256": "5920c9f927179dffb6fb8f949f6ac815557b6c8d945fd76cc7b85c1001347da3"
+    },
+    {
+      "notebook": "06_maintenance.ipynb",
+      "code_cells": 17,
+      "sha256": "cbecd47f2b773b708ecda1ba749c7bf1963dfc3912cd229b24e7891536aa9243"
+    },
+    {
+      "notebook": "07_vectors_multimodal.ipynb",
+      "code_cells": 15,
+      "sha256": "e315d5d02925e447e701b231d15373cfdca6de0b1935c936557903e7d230ae33"
+    },
+    {
+      "notebook": "08_agents_provenance.ipynb",
+      "code_cells": 16,
+      "sha256": "28c929c947b71cb4bf2fc702d9db4d9e4577e68430270d9aead849adff3bce32"
+    }
+  ],
+  "png_count": 16,
+  "reflection_words": 198
+}

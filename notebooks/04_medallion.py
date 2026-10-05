@@ -134,6 +134,8 @@ DeltaTable(GOLD).optimize.z_order(["model"])
 # %%
 gold_df = pl.from_arrow(DeltaTable(GOLD).to_pyarrow_table())
 print(gold_df)
+print("Full Gold table (all date/model groups):")
+print(gold_df.sort(["date", "model"]).write_csv())
 
 # Slide-5 deliverable: "Gold p50/p95/cost qua ≥ 7 ngày". Make that explicit.
 n_dates = gold_df.select("date").n_unique()
@@ -148,6 +150,15 @@ assert n_dates >= 7, (
     f"Gold has only {n_dates} dates — slide deliverable requires ≥ 7. "
     "Re-run `make data` (the generator spreads across 7 UTC days)."
 )
+gold_checks = {
+    "three models on every date": n_models == 3 and gold_df.height == n_dates * 3,
+    "p50 <= p95": gold_df.filter(pl.col("p50_latency_ms") > pl.col("p95_latency_ms")).is_empty(),
+    "positive cost": gold_df.filter(pl.col("cost_usd").is_null() | (pl.col("cost_usd") <= 0)).is_empty(),
+    "error_rate in [0, 1]": gold_df.filter(pl.col("error_rate").is_null() | ~pl.col("error_rate").is_between(0, 1)).is_empty(),
+}
+for label, passed in gold_checks.items():
+    print(f"[{'PASS' if passed else 'FAIL'}] {label}")
+assert all(gold_checks.values()), "Gold does not meet the rubric"
 
 # %% [markdown]
 # ## ✅ Deliverable check

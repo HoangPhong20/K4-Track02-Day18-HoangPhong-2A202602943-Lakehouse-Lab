@@ -1,0 +1,48 @@
+{
+  "started_at": "2026-10-05T04:19:40.159720+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "notebooks": [
+    {
+      "file": "submission\\notebooks\\01_delta_basics.ipynb",
+      "code_cells": 9,
+      "completed_at": "2026-10-05T04:19:43.058519+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\02_optimize_zorder.ipynb",
+      "code_cells": 8,
+      "completed_at": "2026-10-05T04:20:18.893867+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\03_time_travel.ipynb",
+      "code_cells": 8,
+      "completed_at": "2026-10-05T04:20:22.238512+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\04_medallion.ipynb",
+      "code_cells": 6,
+      "completed_at": "2026-10-05T04:20:26.457762+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\05_iceberg_catalog.ipynb",
+      "code_cells": 14,
+      "completed_at": "2026-10-05T04:20:32.576205+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\06_maintenance.ipynb",
+      "code_cells": 17,
+      "completed_at": "2026-10-05T04:21:05.135067+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\07_vectors_multimodal.ipynb",
+      "code_cells": 15,
+      "completed_at": "2026-10-05T04:21:09.918501+00:00"
+    },
+    {
+      "file": "submission\\notebooks\\08_agents_provenance.ipynb",
+      "code_cells": 16,
+      "completed_at": "2026-10-05T04:21:14.702796+00:00"
+    }
+  ],
+  "finished_at": "2026-10-05T04:21:14.702796+00:00"
+}
